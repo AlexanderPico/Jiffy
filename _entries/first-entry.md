@@ -1,5 +1,6 @@
 ---
-title:  "Welcome to Jekyll!"
+layout: entry-page
+title:  "Example entry"
 annotations: Type 1
 ---
 You’ll find this entry in your `_entries` directory. This site does not assume a blogging use case with `_posts`. Go ahead and edit this entry and re-build the site to see your changes. 

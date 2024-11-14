@@ -27,8 +27,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jekyll
+github_username: alexanderpico # the username
+github_repo: Jiffy # the repository name
 discussion_forum: #e.g., https://github.com/username/repo/discussions
+issue_tracker: #e.g., https://github.com/username/repo/issues
 
 # Build settings
 incremental: true
@@ -83,4 +85,6 @@ collections:
   entries:
     output: true
   annotations:
+    output: true
+  browse:
     output: true
