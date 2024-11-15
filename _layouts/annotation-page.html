@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<a class="btn btn-sm btn-pill btn-annotation" style="float: right;" href="{{site.baseurl}}/browse/annotations.html">Annotations</a>
+<a class="btn btn-sm btn-pill btn-annotation" style="float: right;" href="{{ "/browse/annotations.html" | relative_url }}">Annotations</a>
 <a class="page-title" href="{{site.url}}{{page.url}}"></a>
 <h2 id="name">{{ page.name }}
   <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/edit/main/{{ page.path }}" target="_blank">
@@ -18,7 +18,7 @@ layout: default
   {% for ent in site.entries %}
   {% assign annot-values = ent.annotations %}
   {% if annot-values contains page.name %}
-  <li><a href="{{site.baseurl}}{{ ent.url }}">{{ ent.title }}</a></li>
+  <li><a href="{{ ent.url | relative_url }}">{{ ent.title }}</a></li>
   {% endif %}
   {% endfor %}
 </ul>

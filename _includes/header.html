@@ -2,7 +2,7 @@
   <div class="wrapper">
     <!-- NAV BAR -->
     <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">
         <img src="{{ "/assets/img/jiffy_logo.png" | relative_url }}" height="45" class="d-inline-block align-top" alt="Jiffy logo"> {{ site.title }}
       </a>
       <div>
@@ -15,10 +15,10 @@
       </div>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="nav justify-content-center">
-          <a class="nav-item nav-link" href="{{ site.baseurl }}/about.html">About</a>
-          <a class="nav-item nav-link" href="{{ site.baseurl }}/browse/annotations.html">Browse</a>
-          <a class="nav-item nav-link" href="{{ site.baseurl }}/help.html">Help</a>
-          <a class="nav-item nav-link" href="{{ site.baseurl }}/stats.html">Stats</a>
+          <a class="nav-item nav-link" href="{{ "/about.html" | relative_url }}">About</a>
+          <a class="nav-item nav-link" href="{{ "/browse/annotations.html" | relative_url }}">Browse</a>
+          <a class="nav-item nav-link" href="{{ "/help.html" | relative_url }}">Help</a>
+          <a class="nav-item nav-link" href="{{ "/stats.html" | relative_url }}">Stats</a>
         </div>
       </div>
       </nav>

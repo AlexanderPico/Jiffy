@@ -23,7 +23,7 @@ layout: default
 </h2>
 {% for annot in site.annotations %}
 {% if page.annotations contains annot.name %}
-<a class="btn btn-sm btn-pill btn-annotation" href="{{site.baseurl}}{{annot.url}}">{{annot.name}}</a>
+<a class="btn btn-sm btn-pill btn-annotation" href="{{ annot.url | relative_url }}">{{annot.name}}</a>
 {% endif %}
 {% endfor %}
 
