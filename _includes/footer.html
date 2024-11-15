@@ -2,23 +2,18 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-      <a href="https://github.com/{{github_username}}/{{github_repo}}/commits" target="_blank">
+      <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/commits" target="_blank">
         <img alt="GitHub last commit"
-          src="https://img.shields.io/github/last-commit/{{github_username}}/{{github_repo}}?label=updated">
+          src="https://img.shields.io/github/last-commit/{{site.github_username}}/{{site.github_repo}}?label=updated">
       </a>
-      <a href="https://github.com/{{github_username}}/{{github_repo}}/deployments" target="_blank">
+      <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/deployments" target="_blank">
         <img alt="GitHub deployment state" 
-        src="https://img.shields.io/github/deployments/{{github_username}}/{{github_repo}}/github-pages">
+        src="https://img.shields.io/github/deployments/{{site.github_username}}/{{site.github_repo}}/github-pages">
       </a>
       <p style="margin-bottom: 5px;" />
 
     <div class="row"> 
 
-      <div class="col">
-        <p style="width:300px; margin-bottom: 5px;">{{- site.description | escape -}}</p> 
-        <a href="https://creativecommons.org/share-your-work/public-domain/cc0/" target="_blank"><img height="25px" src="/assets/img/cc0.jpg"/></a>
-      </div>
- 
   
       <div class="col text-nowrap">
         <ul class="contact-list">
@@ -31,8 +26,8 @@
       <div class="col text-nowrap">
         <ul class="contact-list">
           <li><a href="/stats.html">Statistics</a></li>
-          <li><a href="{{ site.discussion_forum }}">Start a discussion</a></li>
-          <li><a href="{{ site.issue_tracker }}" target="_blank">Report a bug</a></li>
+          <li><a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/discussions" target="_blank">Start a discussion</a></li>
+          <li><a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/issues" target="_blank">Report a bug</a></li>
         </ul>
       </div>
 

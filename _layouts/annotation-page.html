@@ -2,17 +2,25 @@
 layout: default
 ---
 <a class="btn btn-sm btn-pill btn-annotation" style="float: right;" href="/browse/annotations.html">Annotations</a>
-    <h1> {{ page.type }}</h1>
-    <h2> 
-        {{ page.value }} 
-    </h2>
-    <p>{{ page.definition }}</p>
-    <hr/><br/>
-      <ul>
-        {% for ent in site.entries %}
-          {% assign annot-values= ent.annotations %}
-          {% if annot-values contains page.value %}
-              <li><a href="{{ ent.url }}">{{ ent.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+<a class="page-title" href="{{site.url}}{{page.url}}"></a>
+<h2 id="name">{{ page.name }}
+  <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/edit/main/{{ page.path }}" target="_blank">
+    <span title="Edit name and definition" style="color: #666; font-size: 0.6em; vertical-align: super;">
+      <i class="fa fa-pencil"></i>
+    </span>
+  </a>
+</h2>
+</a>
+<p>{{ page.definition }}</p>
+<hr />
+<br />
+<ul>
+  {% for ent in site.entries %}
+  {% assign annot-values = ent.annotations %}
+  {% if annot-values contains page.name %}
+  <li><a href="{{ ent.url }}">{{ ent.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+{{ content }}

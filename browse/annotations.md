@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Annotations
-permalink: /annotations/
 ---
 
-List of entries by annotations:
+List of annotations:
 {% for annot in site.annotations %}
-  <a href="{{annot.url}}">{{annot.name}}</a>
+  <a class="btn btn-sm btn-pill btn-annotation" href="{{annot.url}}">{{annot.name}}</a>
 {% endfor %}
+

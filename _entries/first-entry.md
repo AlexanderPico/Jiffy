@@ -1,15 +1,18 @@
 ---
 layout: entry-page
-title:  "Example entry"
-annotations: Type 1
+title:  Entry 1
+description: This is the description of Entry 1.
+annotations: Type A
 ---
-You’ll find this entry in your `_entries` directory. This site does not assume a blogging use case with `_posts`. Go ahead and edit this entry and re-build the site to see your changes. 
 
-Feel free to rename the directory per your use case. Be sure to also update "entries" in the following places:
- * _config.yml (see defaults and custom collections)
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<div class="optional-notes">
+    <h3>Developer Notes</h3>
+    <p>You’ll find this entry in your <code>_entries</code> directory. Go ahead and edit the frontmatter of this entry (pencil icons above) and re-build the site to see your changes.</p>
+    
+    <p>Feel free to rename the directory per your use case. Be sure to also update "entry" and "entries" in the following places:</p>
+    <ul>
+        <li><code>_config.yml</code></li>
+        <li><code>_layouts/entry-page.html</code></li>
+        <li><code>browse/entries.md</code></li>
+    </ul>
+</div>

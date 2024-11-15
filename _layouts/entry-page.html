@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<a class="page-title" href="{{site.url}}{{page.url}}">
+  <h1 id="title">{{ page.title }}
+    <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/edit/main/{{ page.path }}"
+      target="_blank">
+      <span title="Edit title and description" style="color: #666; font-size: 0.6em; vertical-align: super;">
+        <i class="fa fa-pencil"></i>
+      </span>
+    </a>
+  </h1>
+</a>
+
+{{ page.description }}
+
+<h2 id="annotations">Annotations
+  <a href="https://github.com/{{site.github_username}}/{{site.github_repo}}/edit/main/{{ page.path }}" target="_blank">
+    <span title="Edit annotations" style="color: #666; font-size: 0.6em; vertical-align: super;">
+      <i class="fa fa-pencil"></i>
+    </span>
+  </a>
+</h2>
+{% for annot in site.annotations %}
+{% if page.annotations contains annot.name %}
+<a class="btn btn-sm btn-pill btn-annotation" href="{{annot.url}}">{{annot.name}}</a>
+{% endif %}
+{% endfor %}
+
+{{ content }}
+
+<script>
+</script>
