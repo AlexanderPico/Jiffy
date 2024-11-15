@@ -2,8 +2,8 @@
   <div class="wrapper">
     <!-- NAV BAR -->
     <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="/">
-        <img src="/assets/img/jiffy_logo.png" height="45" class="d-inline-block align-top" alt="Jiffy logo"> Jiffy
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img src="{{ "/assets/img/jiffy_logo.png" | relative_url }}" height="45" class="d-inline-block align-top" alt="Jiffy logo"> {{ site.title }}
       </a>
       <div>
 
@@ -15,10 +15,10 @@
       </div>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="nav justify-content-center">
-          <a class="nav-item nav-link" href="/about.html">About</a>
-          <a class="nav-item nav-link" href="/#browse">Browse</a>
-          <a class="nav-item nav-link" href="/help.html">Help</a>
-          <a class="nav-item nav-link" href="/stats.html">Stats</a>
+          <a class="nav-item nav-link" href="{{ site.baseurl }}/about.html">About</a>
+          <a class="nav-item nav-link" href="{{ site.baseurl }}/browse/annotations.html">Browse</a>
+          <a class="nav-item nav-link" href="{{ site.baseurl }}/help.html">Help</a>
+          <a class="nav-item nav-link" href="{{ site.baseurl }}/stats.html">Stats</a>
         </div>
       </div>
       </nav>
