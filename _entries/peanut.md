@@ -1,9 +1,13 @@
 ---
 layout: entry-page
-title:  Entry 1
-description: This is the description of Entry 1.
-annotations: Type A
+title: "Peanut"
+description: "A legume often mistaken for a nut, commonly enjoyed as a spread or snack."
+annotations:
+  - legume
+  - butter
+  - snack
 ---
+
 
 <div class="optional-notes">
     <h3>Developer Notes</h3>

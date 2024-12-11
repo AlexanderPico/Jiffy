@@ -1,8 +1,9 @@
 ---
 layout: annotation-page
-name: Type A
-definition: Type A entries are defined by this annotation.  
+title: "legume"
+description: "A type of plant bearing seeds in pods, often rich in protein and not a true nut."
 ---
+
 
 <div class="optional-notes">
     <h3>Developer Notes</h3>
